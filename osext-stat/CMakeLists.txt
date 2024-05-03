@@ -18,3 +18,13 @@ include_directories(
 
 target_link_libraries(osext
         ${log-lib})
+
+# library 'osexttest' only for 'androidTest' it is excluded in packaging for release
+add_library(osexttest
+        SHARED
+        src/main/native/osext/common.cpp
+        src/androidTest/native/osext/system/exceptions_test.cpp
+)
+
+target_link_libraries(osexttest
+        ${log-lib})

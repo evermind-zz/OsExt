@@ -54,6 +54,12 @@ android {
             path "CMakeLists.txt"
         }
     }
+
+    androidComponents {
+        onVariants(selector().withBuildType("release"), {
+            packaging.jniLibs.excludes.add('**/libosexttest.so')  // <- this is only for testing the exceptions
+        })
+    }
 }
 
 dependencies {
