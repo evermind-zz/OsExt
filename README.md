@@ -17,7 +17,7 @@ allprojects {
 
 and in your `whatever/build.gradle` in dependencies include:
 ```
-implementation "com.github.evermind-zz:osext-stat:TAG"
+implementation "com.github.evermind-zz.osext:osext-stat:TAG"
 ```
 replace `TAG` with the actual version you want to use.
 

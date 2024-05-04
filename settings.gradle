@@ -1,2 +1,3 @@
 rootProject.name = "OsExt"
 include ':osext-stat'
+include ':placeholder'

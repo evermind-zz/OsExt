@@ -9,6 +9,8 @@ buildscript {
 }
 
 allprojects {
+    group = 'com.github.evermindzz.osext'
+
     repositories {
         google()
         maven { url "https://jitpack.io" }

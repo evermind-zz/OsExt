@@ -3,8 +3,6 @@ plugins {
     id 'maven-publish'
 }
 
-group = 'com.github.evermindzz'
-
 android {
     namespace 'com.github.evermindzz.osext'
     compileSdk 31
@@ -75,7 +73,7 @@ afterEvaluate {
             // Creates a Maven publication called "release".
             release(MavenPublication) {
                 from components.release
-                groupId = 'com.github.evermindzz'
+                groupId = project.group
                 artifactId = 'osext-stat'
                 version = android.defaultConfig.versionName
             }
