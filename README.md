@@ -6,6 +6,9 @@ using JNI to call native libc methods.
 ### osext-stat
 [osext-stat](osext-stat/README.md)
 
+### native-utils
+[native-utils](native-utils/README.md)
+
 ### Releases
 Releases are distributed via jitpack. Make sure you include jitpack in
 your main `build.gradle`
