@@ -1,6 +1,10 @@
-## About this library
-Kitkat aka Android 4.4 lacks fstatvfs() and statvfs() and more.
-This projects makes fstatvfs() and statvfs() accessible from Java.
+# JNI libraries
+For some projects I required some special features that were not available
+on some older Android versions or not available at all. They are all
+using JNI to call native libc methods.
+
+### osext-stat
+[osext-stat](osext-stat/README.md)
 
 ### Releases
 Releases are distributed via jitpack. Make sure you include jitpack in
@@ -14,12 +18,3 @@ allprojects {
     }
 }
 ```
-
-and in your `whatever/build.gradle` in dependencies include:
-```
-implementation "com.github.evermind-zz.osext:osext-stat:TAG"
-```
-replace `TAG` with the actual version you want to use.
-
-### Usage
-See [OsExtStatVfsTest.java](osext-stat/src/androidTest/java/com/github/evermindzz/osext/system/OsExtStatVfsTest.java)
