@@ -1,4 +1,18 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+
+dependencyResolutionManagement {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
 rootProject.name = "OsExt"
 include ':osext-stat'
 include ':native-utils'
-include ':placeholder'
+//include ':placeholder'

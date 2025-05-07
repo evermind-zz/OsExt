@@ -4,12 +4,17 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath libs.gradle
+        classpath libs.android.gradle.plugin
     }
 }
 
+plugins {
+    id 'com.android.library' version libs.versions.android.gradle.plugin apply false
+}
+
 allprojects {
-    group = 'com.github.evermindzz.osext'
+    group = 'com.github.evermind-zz.osext'
+    version = '1.0.2'
 
     repositories {
         google()

@@ -11,7 +11,7 @@ android {
         minSdk 19
         targetSdk 31
         versionCode 1
-        versionName "1.0.0"
+        versionName "1.0.2"
 
         externalNativeBuild {
             cmake {
@@ -52,12 +52,6 @@ android {
             path "CMakeLists.txt"
         }
     }
-
-    androidComponents {
-        onVariants(selector().withBuildType("release"), {
-            packaging.jniLibs.excludes.add('**/libosexttest.so')  // <- this is only for testing the exceptions
-        })
-    }
 }
 
 dependencies {
@@ -75,7 +69,7 @@ afterEvaluate {
                 from components.release
                 groupId = project.group
                 artifactId = 'native-utils'
-                version = android.defaultConfig.versionName
+                version = project.version
             }
         }
     }

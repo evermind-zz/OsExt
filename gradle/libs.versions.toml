@@ -1,13 +1,13 @@
 [versions]
-gradle = "7.0.4"
 junit = "4.13.2"
 junitVersion = "1.1.5"
 runner = "1.5.2"
 hamcrest = "2.2"
+android-gradle-plugin = "7.0.4"
 
 [libraries]
-gradle = { module = "com.android.tools.build:gradle", version.ref = "gradle" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 runner = { module = "androidx.test:runner", version.ref = "runner" }
 hamcrest-lib = { group = "org.hamcrest", name = "hamcrest-library", version.ref = "hamcrest" }
+android-gradle-plugin = { group = "com.android.tools.build", name = "gradle", version.ref = "android-gradle-plugin" }
